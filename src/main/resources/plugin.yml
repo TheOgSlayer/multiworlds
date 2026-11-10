@@ -1,0 +1,18 @@
+name: MultiWorlds
+version: 1.0.0
+main: me.server.multiworlds.MultiWorlds
+api-version: '1.20'
+author: Jalebi
+description: Create, import, load and teleport between worlds. Inventories and ender chests stay shared across all worlds.
+loadbefore: [Essentials, EssentialsX, RTPMenu, RTPDuels]
+
+commands:
+  mw:
+    description: World management
+    usage: /mw <create|import|load|unload|remove|delete|list|tp|setspawn|info>
+    aliases: [multiworlds, worlds]
+
+permissions:
+  multiworlds.admin:
+    description: Use /mw
+    default: op
